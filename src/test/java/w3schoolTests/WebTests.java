@@ -19,6 +19,4 @@ public class WebTests extends Setup {
         WebFlows.validateContactNameByCompanyByXpath("Island Trading","Helen Bennett");
     }
 
-
-
 }
