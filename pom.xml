@@ -63,7 +63,7 @@
                         <version>2.22.1</version>
                         <configuration>
                             <suiteXmlFiles>
-                                <suiteXmlFile>FullSuite.xml</suiteXmlFile>
+                                <suiteXmlFile>ApiSuite.xml</suiteXmlFile>
                             </suiteXmlFiles>
                             <argLine>
                                 -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
@@ -74,7 +74,7 @@
             </build>
         </profile>
         <profile>
-            <id>ApiSuite</id>
+            <id>WebSuite</id>
             <build>
                 <plugins>
                     <plugin>
@@ -83,7 +83,7 @@
                         <version>2.22.1</version>
                         <configuration>
                             <suiteXmlFiles>
-                                <suiteXmlFile>FullSuite.xml</suiteXmlFile>
+                                <suiteXmlFile>WebSuite.xml</suiteXmlFile>
                             </suiteXmlFiles>
                             <argLine>
                                 -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
